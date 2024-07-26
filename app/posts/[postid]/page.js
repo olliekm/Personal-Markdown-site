@@ -60,7 +60,7 @@ function Page() {
       }
     }
     fetchPostData();
-  }, []);
+  });
 
   // Use gray-matter to parse the post metadata section
 
