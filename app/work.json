@@ -1,0 +1,33 @@
+{
+    "work": [
+        {
+            "title": "Sapien",
+            "content": "A graph based approach to learning",
+            "techStack":["ReactJS", "NextJS", "TailwindCSS", "shadcn/ui"]
+        },
+        {
+            "title": "olliekm.com",
+            "content": "Personal site with markdown blogging features",
+            "techStack":["ReactJS", "NextJS", "TailwindCSS", "AWS S3", "Supabase"],
+            "live": "https://www.olliekm.com",
+            "github": ""
+
+        },
+        {
+            "title": "I like math 3",
+            "content": "POOP"
+        },
+        {
+            "title": "I like math 4",
+            "content": "POOP"
+        },
+        {
+            "title": "I like math 5",
+            "content": "POOP"
+        },
+        {
+            "title": "I like math 6",
+            "content": "POOP"
+        }
+    ]
+}
