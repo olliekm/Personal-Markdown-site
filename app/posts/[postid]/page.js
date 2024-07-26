@@ -42,7 +42,6 @@ function Page() {
         setIsLoading(false);
       }
     }
-    setIsLoading(true);
 
     async function fetchPostData() {
       console.log(decodedId);
@@ -60,7 +59,8 @@ function Page() {
       }
     }
     fetchPostData();
-  });
+    setIsLoading(true);
+  }, [decodedId]);
 
   // Use gray-matter to parse the post metadata section
 
