@@ -124,7 +124,9 @@ function Page() {
             <div className="flex gap-2 flex-wrap mt-4">
               <small>Topics:</small>
               {post.tags.map((tag, jdx) => (
-                <small>{allTags.find((item) => item.id === tag).name}</small>
+                <small key={jdx}>
+                  {allTags.find((item) => item.id === tag).name}
+                </small>
               ))}
             </div>
           </Link>
