@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.614.0",
+    "@aws-sdk/s3-request-presigner": "^3.620.0",
     "@supabase/supabase-js": "^2.44.4",
     "@wojtekmaj/react-hooks": "^1.21.0",
     "next": "14.2.5",
