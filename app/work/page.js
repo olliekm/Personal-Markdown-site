@@ -2,7 +2,7 @@ import React from "react";
 import { promises as fs } from "fs";
 import Image from "next/image";
 
-async function page() {
+async function Page() {
   const file = await fs.readFile(process.cwd() + "/app/work.json", "utf8");
   const data = JSON.parse(file).work;
 
@@ -106,4 +106,4 @@ async function page() {
   );
 }
 
-export default page;
+export default Page;

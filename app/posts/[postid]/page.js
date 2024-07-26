@@ -5,7 +5,6 @@ import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 import RemarkMathPlugin from "remark-math";
 import rehypeKatex from "rehype-katex";
-import remarkHighlightjs from "remark-highlight.js";
 import { useParams } from "next/navigation";
 import { supabase } from "@/app/utils/supabase";
 import Link from "next/link";
@@ -20,7 +19,7 @@ const _mapProps = (props) => ({
     inlineMath: (opts) => <InlineMath math={opts.value} />,
   },
 });
-function page() {
+function Page() {
   const { postid } = useParams();
   const decodedId = decodeURIComponent(postid);
   const [postData, setPostData] = useState("");
@@ -122,4 +121,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

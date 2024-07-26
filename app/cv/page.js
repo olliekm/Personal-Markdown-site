@@ -3,7 +3,7 @@ import React from "react";
 import { useCallback, useState } from "react";
 import { useResizeObserver } from "@wojtekmaj/react-hooks";
 
-function page() {
+function Page() {
   return (
     <div className="">
       <embed
@@ -31,4 +31,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

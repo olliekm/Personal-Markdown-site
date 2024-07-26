@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { supabase } from "../utils/supabase";
 import Link from "next/link";
 
-function page() {
+function Page() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
@@ -134,4 +134,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

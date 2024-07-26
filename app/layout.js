@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import RouteNameText from "@/components/RouteNameText";
-import FooterComponent from "@/components/FooterComponent";
+import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -132,7 +132,9 @@ export default function RootLayout({ children }) {
                 href="https://visitcount.itsvg.in"
                 aria-label="Just an icon showing view count of site"
               >
-                <img
+                <Image
+                  width={100}
+                  height={50}
                   alt="view count"
                   src="https://visitcount.itsvg.in/api?id=olliekm&label=Views&color=12&icon=5&pretty=true"
                 />
