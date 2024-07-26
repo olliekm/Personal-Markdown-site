@@ -5,11 +5,10 @@ import { useResizeObserver } from "@wojtekmaj/react-hooks";
 
 function Page() {
   return (
-    <div className="">
+    <div className="min-h-screen w-full pt-20">
       <embed
         src="oliver_kwun_morfitt_resume_2024.pdf"
-        width="800px"
-        height={800}
+        className=" w-full h-screen"
       />
 
       {/* <Document

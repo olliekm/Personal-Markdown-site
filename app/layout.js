@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className="bg-indigo-400">
       <body className={inter.className}>
         <div className="hidden sm:flex fixed top-0 right-0 dark:text-white text-black p-4"></div>
-        <div className="flex min-h-screen max-h-full sm:flex-row flex-col dark:text-white dark:bg-gray-900 text-gray-800 bg-white transition-colors">
+        <div className="flex min-h-screen max-h-full sm:flex-row flex-col dark:text-white dark:bg-gray-900 text-gray-800 bg-white transition-colors ">
           {/* <div className="fixed top-0 w-full h-auto flex justify-center items-center bg-indigo-400 text-white">
             Still under construction 🚧
           </div> */}
-          <div className=" sm:hidden fixed top-0 right-0 flex flex-col mt-8 fill-gray-400 space-y-4 p-2">
+          <div className=" sm:hidden fixed top-0 right-0 flex flex-col mt-8 fill-gray-400 space-y-4 p-2 z-20">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
                 </div>
               </div>
             </div>
-            <div className="hidden sm:flex space-x-4">
+            <div className="hidden sm:flex space-x-4 z-0">
               <a
                 href="https://www.github.com/olliekm"
                 target="_blank"
@@ -125,9 +125,7 @@ export default function RootLayout({ children }) {
             </div>
             {children}
             {/* <FooterComponent /> */}
-            <div className="p-2 px-4 mt-10 bg-indigo-400 text-white">
-              <small>Created by Oliver Kwun-Morfitt 🤖</small>
-            </div>
+            <div className="p-2 px-4 mt-10 "></div>
           </div>
           <div className="fixed bottom-0 right-0 p-4">
             <div className="">
