@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="">
+    <html lang="en" className="bg-indigo-400">
       <body className={inter.className}>
         <div className="hidden sm:flex fixed top-0 right-0 dark:text-white text-black p-4"></div>
         <div className="flex min-h-screen max-h-full sm:flex-row flex-col dark:text-white dark:bg-gray-900 text-gray-800 bg-white transition-colors">
@@ -119,12 +119,15 @@ export default function RootLayout({ children }) {
               </a>
             </div>
           </div>
-          <div className="flex-1 ">
-            <div className="w-full p-10 pb-0">
+          <div className="flex-1">
+            <div className="w-full p-10 pb-0 overflow-hidden">
               <RouteNameText />
             </div>
             {children}
             {/* <FooterComponent /> */}
+            <div className="p-2 px-4 mt-10 bg-indigo-400 text-white">
+              <small>Created by Oliver Kwun-Morfitt 🤖</small>
+            </div>
           </div>
           <div className="fixed bottom-0 right-0 p-4">
             <div className="">
