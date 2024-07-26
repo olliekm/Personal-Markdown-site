@@ -58,7 +58,7 @@ export default function Home() {
         {/* Homepage content */}
         <div className="flex justify-between w-full">
           <div className="lg:w-1/2 w-full p-10 space-y-8">
-            <h1 className="text-3xl">Hi, I&quot;m Oliver</h1>
+            <h1 className="text-3xl">Hi, I&apos;m Oliver</h1>
             <p>
               I am student at the <strong>University of Toronto</strong>,
               studying <strong>Computer Science</strong>. I plan to focus in
@@ -95,7 +95,7 @@ export default function Home() {
           <h1 className="text-3xl">
             I have a passion for maths and its applications in computing
           </h1>
-          <h2 className="text-xl">Here&quot;s some of my posts on this:</h2>
+          <h2 className="text-xl">Here&apos;s some of my posts on this:</h2>
           <div className="flex flex-wrap gap-2">
             {isLoading && (
               <>
