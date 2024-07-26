@@ -8,6 +8,7 @@ import rehypeKatex from "rehype-katex";
 import remarkHighlightjs from "remark-highlight.js";
 import { useParams } from "next/navigation";
 import { supabase } from "@/app/utils/supabase";
+import Link from "next/link";
 
 const _mapProps = (props) => ({
   ...props,
@@ -24,7 +25,8 @@ function page() {
   const decodedId = decodeURIComponent(postid);
   const [postData, setPostData] = useState("");
   const [MDData, setMDData] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [didError, setDidError] = useState(false);
   useEffect(() => {
     async function fetchMarkdownFile(url) {
       try {
@@ -35,6 +37,7 @@ function page() {
         const data = await response.text();
         setMDData(data);
       } catch (error) {
+        setDidError(true);
         console.error("Error fetching image:", error);
       } finally {
         setIsLoading(false);
@@ -49,7 +52,13 @@ function page() {
         .select()
         .eq("title", decodedId);
       setPostData(data[0]);
-      fetchMarkdownFile(data[0].s3_url);
+      try {
+        fetchMarkdownFile(data[0].s3_url);
+      } catch (err) {
+        setDidError(true);
+      } finally {
+        setIsLoading(false);
+      }
     }
     fetchPostData();
   }, []);
@@ -61,8 +70,28 @@ function page() {
   // .use(html)
   // .process(file);
   // const contentHtml = processedContent.toString();
-  if (isLoading) return "loading";
+  if (isLoading)
+    return (
+      <div className="flex-1 min-h-screen flex justify-center items-center p-8">
+        <h1>Loading Post...</h1>
+      </div>
+    );
 
+  if (didError) {
+    return (
+      <div className="flex-1 min-h-screen flex justify-center items-center p-8">
+        <div className=" text-white rounded-md flex flex-col overflow-hidden">
+          <div className="p-4 bg-red-400">Sorry an error occured</div>
+          <Link
+            href={"/posts"}
+            className="bg-gray-100 text-black p-2 text-center underline"
+          >
+            Back to posts
+          </Link>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="flex flex-col items-center w-auto px-4 overflow-hidden">
       <div className="p-8 w-full flex flex-col items-center text-center">
@@ -78,7 +107,7 @@ function page() {
           {MDData}
         </ReactMarkdown>
       </div>
-      <div className="w-full h-[1px] bg-black/20 mt-10"></div>
+      {/* <div className="w-full h-[1px] bg-black/20 mt-10"></div> */}
       {/* <div className="p-8 mb-8 space-y-4">
         <div className="text-2xl ">
           <h1>More posts</h1>

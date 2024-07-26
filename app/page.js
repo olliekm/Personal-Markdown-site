@@ -124,16 +124,12 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="p-10 space-y-8">
+        {/* <div className="p-10 space-y-8">
           <h1 className="text-3xl">Check out some of my personal projects</h1>
           <h2 className="text-xl">Here's some of them:</h2>
           <div className="flex flex-wrap gap-2">
-            <div className="sm:w-64 w-full aspect-square bg-black"></div>
-            <div className="sm:w-64 w-full aspect-square bg-black"></div>
-            <div className="sm:w-64 w-full aspect-square bg-black"></div>
-            <div className="sm:w-64 w-full aspect-square bg-black"></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

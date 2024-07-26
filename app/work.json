@@ -1,7 +1,7 @@
 {
     "work": [
         {
-            "title": "Sapien",
+            "title": "Sapien | WIP",
             "content": "A graph based approach to learning",
             "techStack":["ReactJS", "NextJS", "TailwindCSS", "shadcn/ui"]
         },
@@ -10,24 +10,23 @@
             "content": "Personal site with markdown blogging features",
             "techStack":["ReactJS", "NextJS", "TailwindCSS", "AWS S3", "Supabase"],
             "live": "https://www.olliekm.com",
-            "github": ""
+            "github": "https://github.com/olliekm/Personal-Markdown-site"
 
         },
         {
-            "title": "I like math 3",
-            "content": "POOP"
+            "title": "DOOM-GPT",
+            "content": "A Transformer model LLM trained on MF DOOM and Taylor Swift to generate like-sounding lyrics, based on 'Attention is all you need'",
+            "techStack":["Python", "Pytorch", "Jupyter Notebook", "Numpy"],
+            "github":"https://github.com/olliekm/mygpt",
+            "live":"https://tailorswift-tau.vercel.app/",
+            "blogPost": "http://localhost:3000/posts/Gradient%20Descent"
+
         },
         {
-            "title": "I like math 4",
-            "content": "POOP"
-        },
-        {
-            "title": "I like math 5",
-            "content": "POOP"
-        },
-        {
-            "title": "I like math 6",
-            "content": "POOP"
+            "title": "MF DOOM Statistics",
+            "content": "A learning project of applying quantitative analysis methods to music related data",
+            "techStack":["Python", "Matplotlib", "Jupyter Notebook", "Numpy", "NextJS", "TailwindCSS", "shadcn/ui"]
+
         }
     ]
 }

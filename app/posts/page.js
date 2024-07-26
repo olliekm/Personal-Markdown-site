@@ -79,7 +79,7 @@ function page() {
 
   const search = searchParams.getAll("tags");
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       <div className="w-full h-auto p-8 space-y-8">
         <h1 className="text-4xl">My posts:</h1>
         <div className="flex items-start space-x-4">
