@@ -19,14 +19,21 @@
             "techStack":["Python", "Pytorch", "Jupyter Notebook", "Numpy"],
             "github":"https://github.com/olliekm/mygpt",
             "live":"https://tailorswift-tau.vercel.app/",
-            "blogPost": "http://localhost:3000/posts/Gradient%20Descent"
+            "blogPost": "https://www.olliekm.com/posts/Gradient%20Descent"
+
+        },
+        {
+            "title": "Simulated AI evolution model",
+            "content": "A simple simulation using a genetic evolution model to assess 'fitness' of AI and improve (Based on concepts of Natural Selection)",
+            "techStack":["Python", "Pytorch", "Jupyter Notebook", "Numpy", "PyGame"],
+            "github":"https://github.com/olliekm/Evolutionary-Algorithm",
+            "blogPost": "https://www.olliekm.com/posts/Evolution%20Simulated%20with%20Neural%20Networks"
 
         },
         {
             "title": "MF DOOM Statistics",
             "content": "A learning project of applying quantitative analysis methods to music related data",
             "techStack":["Python", "Matplotlib", "Jupyter Notebook", "Numpy", "NextJS", "TailwindCSS", "shadcn/ui"]
-
         }
     ]
 }
