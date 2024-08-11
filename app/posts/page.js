@@ -116,7 +116,7 @@ function Page() {
           {posts?.map((post, idx) => (
             <Link
               key={idx}
-              className="bg-gray-100 p-4 h-40 rounded-xl border-[1px] border-gray-200 hover:scale-105 duration-75 hover:shadow-lg"
+              className="bg-gray-100 p-4 min-h-40 rounded-xl border-[1px] border-gray-200 hover:scale-105 duration-75 hover:shadow-lg"
               href={"/posts/" + post.title}
             >
               <h1 className="text-3xl">{post.title}</h1>

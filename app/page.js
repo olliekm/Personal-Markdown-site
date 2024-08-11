@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { supabase } from "./utils/supabase";
+import BuildInPublic from "@/components/BuildInPublic";
 
 export default function Home() {
   const [recentPosts, setRecentPosts] = useState([]);
@@ -16,9 +17,7 @@ export default function Home() {
         .limit(2)
         .order("created_at", { ascending: false });
 
-      console.log(data);
       setRecentPosts(data);
-
       setIsLoading(false);
     }
 
@@ -95,7 +94,9 @@ export default function Home() {
           <h1 className="text-3xl">
             I have a passion for maths and its applications in computing
           </h1>
-          <h2 className="text-xl">Here&apos;s some of my posts on this:</h2>
+          <small className="text-xl">
+            Here&apos;s some of my posts on this:
+          </small>
           <div className="flex flex-wrap gap-2">
             {isLoading && (
               <>
@@ -124,6 +125,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <BuildInPublic />
         {/* <div className="p-10 space-y-8">
           <h1 className="text-3xl">Check out some of my personal projects</h1>
           <h2 className="text-xl">Here's some of them:</h2>
