@@ -62,21 +62,21 @@ export default function Home() {
               I am student at the <strong>University of Toronto</strong>,
               studying <strong>Computer Science</strong>. I plan to focus in
               <strong> Artificial Intelligence</strong> and minor in{" "}
-              <strong>Statistics</strong> (potentially major/minor in Scientific
-              Computing)
+              <strong>Statistics</strong> (potentially major/minor in Mathmatics)
             </p>
             <p>
-              I also just completed the{" "}
-              <a
-                href="https://www.coursera.org/account/accomplishments/specialization/certificate/R73ZYHR9EKXT"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline hover:text-indigo-500 font-bold"
-              >
-                Stanford University & DeepLearning.AI Machine Learning
-                Specialization
-              </a>{" "}
-              course!
+              I'm currently looking for Summer 2025 internship opportunities! 
+              // I also just completed the{" "}
+              // <a
+              //   href="https://www.coursera.org/account/accomplishments/specialization/certificate/R73ZYHR9EKXT"
+              //   target="_blank"
+              //   rel="noopener noreferrer"
+              //   className="hover:underline hover:text-indigo-500 font-bold"
+              // >
+              //   Stanford University & DeepLearning.AI Machine Learning
+              //   Specialization
+              // </a>{" "}
+              // course!
             </p>
           </div>
           {/* <div className="hidden lg:flex flex-1 p-10">
