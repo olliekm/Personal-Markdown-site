@@ -65,7 +65,7 @@ export default function Home() {
               <strong>Statistics</strong> (potentially major/minor in Mathmatics)
             </p>
             <p>
-              I'm currently looking for Summer 2025 internship opportunities! 
+              I&apos;m currently looking for Summer 2025 internship opportunities! 
               // I also just completed the{" "}
               // <a
               //   href="https://www.coursera.org/account/accomplishments/specialization/certificate/R73ZYHR9EKXT"
