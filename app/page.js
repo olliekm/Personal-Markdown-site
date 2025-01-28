@@ -66,17 +66,6 @@ export default function Home() {
             </p>
             <p>
               I&apos;m currently looking for Summer 2025 internship opportunities! 
-              // I also just completed the{" "}
-              // <a
-              //   href="https://www.coursera.org/account/accomplishments/specialization/certificate/R73ZYHR9EKXT"
-              //   target="_blank"
-              //   rel="noopener noreferrer"
-              //   className="hover:underline hover:text-indigo-500 font-bold"
-              // >
-              //   Stanford University & DeepLearning.AI Machine Learning
-              //   Specialization
-              // </a>{" "}
-              // course!
             </p>
           </div>
           {/* <div className="hidden lg:flex flex-1 p-10">
