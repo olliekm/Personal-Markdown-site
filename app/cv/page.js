@@ -7,7 +7,7 @@ function Page() {
   return (
     <div className="min-h-screen w-full pt-20">
       <a
-        href="https://drive.google.com/file/d/13qfHyib1qk19ioKJ3bDO9eY1vfEX_fiq/view?usp=sharing"
+        href="https://drive.google.com/file/d/1WQ-YfbOAh_lOhEnXD0ml_FBu90lGi9Ah/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="p-2 bg-indigo-400 text-white rounded-sm underline"
@@ -15,7 +15,7 @@ function Page() {
         If the resume does not load, click here.
       </a>
       <embed
-        src="oliver_kwun_morfitt_resume_2024.pdf"
+        src="oliverkm.pdf"
         className=" w-full h-screen"
       />
 
