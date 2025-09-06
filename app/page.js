@@ -61,11 +61,11 @@ export default function Home() {
             <p>
               I am student at the <strong>University of Toronto</strong>,
               studying <strong>Computer Science</strong>. I plan to focus in
-              <strong> Artificial Intelligence</strong> and minor in{" "}
-              <strong>Statistics</strong> (potentially major/minor in Mathmatics)
+              <strong> Artificial Intelligence</strong> with a major in{" "}
+              <strong>Statistics</strong> and a minor in <strong>Math</strong>.
             </p>
             <p>
-              I&apos;m currently looking for Summer 2025 internship opportunities! 
+              I&apos;m currently looking for Summer 2026 internship opportunities! 
             </p>
           </div>
           {/* <div className="hidden lg:flex flex-1 p-10">
